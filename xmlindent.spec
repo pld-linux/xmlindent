@@ -3,7 +3,7 @@ Summary(pl):	xmlindent - reformator strumieni XML
 Name:		xmlindent
 Version:	0.2.17
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Publishing/XML
 Source0:	http://dl.sourceforge.net/xmlindent/%{name}-%{version}.tar.gz
 # Source0-md5:	c08be3867ee906ca69b949d55a4f3780
