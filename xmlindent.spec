@@ -8,6 +8,7 @@ Group:		Applications/Publishing/XML
 Source0:	http://dl.sourceforge.net/xmlindent/%{name}-%{version}.tar.gz
 # Source0-md5:	c08be3867ee906ca69b949d55a4f3780
 URL:		http://xmlindent.sourceforge.net/
+Patch0:		%{name}-DESTDIR.patch
 BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id- u -n)
 
@@ -20,16 +21,16 @@ strumienie XML.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install xmlindent $RPM_BUILD_ROOT%{_bindir}
-install xmlindent.1 $RPM_BUILD_ROOT%{_mandir}/man1/xmlindent.1
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
