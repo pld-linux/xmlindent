@@ -1,0 +1,58 @@
+.TH "xmlindent" "1" "0.2.17" "Thomas Fischer" ""
+.SH "NAZWA"
+.LP 
+xmlindent \- reformator strumieni XML
+.SH "SK£ADNIA"
+.LP 
+xmlindent [\fB\-o\fP \fIplik wyj¶ciowy\fP] [\fB\-i\fP \fIpoziom wciêæ\fP]
+[\fB\-l\fP \fImaksymalna liczba kolumn\fP] [\fB\-n\fP \fIpozycja nowej linii\fP]
+[\fB\-t\fP] [\fB\-c\fP] [\fB-f\fP] [\fB\-w\fP] [\fB\-h\fP] [\fB\-v\fP]
+.SH "OPIS"
+.LP 
+XML Indent to reformator strumieni XML napisany w ANSI C. Jest analogiczny do GNU indent.
+.SH "OPCJE"
+.LP 
+.TP 
+\fB\-o\fR \fIplik wyj¶ciowy\fP
+Zapisuje przetworzony plik XML do \fIpliku wyj¶ciowego\fP
+.TP 
+\fB\-i\fR \fIpoziom wciêæ\fP
+Wcina ka¿dy poziom, \fIpoziom wciêæ\fP spacji g³êbiej
+.TP 
+\fB\-l\fR \fImaksymalna liczba kolumn\fP
+Zawija linie d³u¿sze ni¿ \fImaksymalna liczba kolumn\fP
+.TP 
+\fB\-t\fR
+U¿ywa tabulatorów zamiast spacji
+.TP 
+\fB\-nas\fR
+Likwiduje now± liniê po tagu startowym
+.TP 
+\fB\-nae\fR
+Likwiduje now± liniê po tagu koñcowym
+.TP 
+\fB\-nbs\fR
+Likwiduje now± liniê przed tagiem startowym
+.TP 
+\fB\-nbe\fR
+Likwiduje now± liniê przed tagiem koñcowym
+.TP 
+\fB\-f\fR
+Wymusza now± liniê na elemencie bez zawarto¶ci
+.TP 
+\fB\-w\fR
+Zastêpuje oryginalny plik
+.TP 
+\fB\-v\fR
+Wy¶wietla wersjê programu
+.TP 
+\fB\-h\fR
+Wy¶wietla krótk± pomoc
+.SH "AUTORZY"
+.LP 
+Pekka Enberg <penberg@iki.fi>
+.br 
+Thomas Fischer <th.fischer@gmx.net> (man page)
+.SH "ZOBACZ TAK¯E"
+.LP 
+indent(1)
