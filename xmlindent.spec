@@ -11,7 +11,7 @@ Source1:	%{name}.pl.1
 URL:		http://xmlindent.sourceforge.net/
 Patch0:		%{name}-DESTDIR.patch
 BuildRequires:	flex
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id- u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 xmlindent is a XML stream reformatter written in ANSI C.
@@ -33,6 +33,7 @@ install -d $RPM_BUILD_ROOT%{_mandir}/pl/man1
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
 install %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/pl/man1/xmlindent.1
 
 %clean
@@ -43,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc BUGS ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
-%{_mandir}/pl/man1/*
+%lang(pl) %{_mandir}/pl/man1/*
