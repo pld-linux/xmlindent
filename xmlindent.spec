@@ -8,6 +8,7 @@ Group:		Applications/Publishing/XML
 Source0:	http://dl.sourceforge.net/xmlindent/%{name}-%{version}.tar.gz
 # Source0-md5:	c08be3867ee906ca69b949d55a4f3780
 URL:		http://xmlindent.sourceforge.net/
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id- u -n)
 
 %description
