@@ -11,6 +11,7 @@ Source1:	%{name}.pl.1
 URL:		http://xmlindent.sourceforge.net/
 Patch0:		%{name}-DESTDIR.patch
 BuildRequires:	flex
+BuildRequires:	m4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
