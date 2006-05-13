@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/xmlindent/%{name}-%{version}.tar.gz
 Source1:	%{name}.pl.1
 URL:		http://xmlindent.sourceforge.net/
 Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-Makefile.patch
 BuildRequires:	flex
 BuildRequires:	m4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -24,9 +25,12 @@ strumienie XML.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
