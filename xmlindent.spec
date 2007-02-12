@@ -1,5 +1,5 @@
 Summary:	xmlindent - XML stream reformatter
-Summary(pl):	xmlindent - reformater strumieni XML
+Summary(pl.UTF-8):   xmlindent - reformater strumieni XML
 Name:		xmlindent
 Version:	0.2.17
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xmlindent is a XML stream reformatter written in ANSI C.
 
-%description -l pl
-xmlindent jest programem napisanym w ANSI C przeformatowuj±cym
+%description -l pl.UTF-8
+xmlindent jest programem napisanym w ANSI C przeformatowujÄ…cym
 strumienie XML.
 
 %prep
