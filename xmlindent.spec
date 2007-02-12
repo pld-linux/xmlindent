@@ -1,5 +1,5 @@
 Summary:	xmlindent - XML stream reformatter
-Summary(pl.UTF-8):   xmlindent - reformater strumieni XML
+Summary(pl.UTF-8):	xmlindent - reformater strumieni XML
 Name:		xmlindent
 Version:	0.2.17
 Release:	2
