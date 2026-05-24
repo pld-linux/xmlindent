@@ -2,7 +2,7 @@ Summary:	xmlindent - XML stream reformatter
 Summary(pl.UTF-8):	xmlindent - reformater strumieni XML
 Name:		xmlindent
 Version:	0.2.17
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Applications/Publishing/XML
 Source0:	http://downloads.sourceforge.net/xmlindent/%{name}-%{version}.tar.gz
